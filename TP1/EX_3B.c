@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-/* Example of code given in the atexit man page, not altered to suit the exercise */
+/* Example of code given in the atexit man page, not altered to suit the exercise, but works anyway apparently */
 
 void bye(){
     printf("That was all, folks!\n");
