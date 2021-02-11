@@ -14,12 +14,13 @@ int checkSubstring(char *a, char*b){
 
 
 int main(int argc, char *argv[], char *envp[]){
-    
-   for(int i = 1; argv[i] != NULL; i++){
-        for(int j = 0; envp[j] != NULL; j++){
-            if(checkSubstring(argv[i], envp[j]) == 0){
-                printf("%s\n", envp[j]);
-            } 
+    if(argc != 1 ){
+        for(int i = 1; argv[i] != NULL; i++){
+            for(int j = 0; envp[j] != NULL; j++){
+                if(checkSubstring(argv[i], envp[j]) == 0){
+                    printf("%s\n", envp[j]);
+                }
+            }
         }
     }
     return 0;
