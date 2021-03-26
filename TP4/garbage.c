@@ -4,6 +4,8 @@
 #include <stdio.h>
 #include <ctype.h>
 
+// I think this correct what was originally given, not sure though.
+
 void *garbage_collected_malloc(size_t size) {
     void *p = malloc(size);
     return p;
